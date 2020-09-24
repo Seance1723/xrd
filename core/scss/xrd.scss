@@ -1,0 +1,17 @@
+/*!
+ * Bootstrap v1.0.0 (https://xrd.com/)
+ * Copyright 2020 Rupak Biswas
+ * Copyright 2020 XRD Framework.
+ * Licensed under MIT (https://github.com/Seance1723/xrd/blob/master/LICENSE)
+ */
+
+// This file contains all property used in this application.
+
+// normalize.css
+@import "_mixins/normalize";
+
+// Importing core files
+@import "_mixins/mixins";
+
+// Importing component files
+@import "_components/spacing";
