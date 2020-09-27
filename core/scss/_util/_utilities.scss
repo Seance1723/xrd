@@ -1,0 +1,13 @@
+$utilities: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$utilities: map-merge(
+    (
+        // Padding utilities
+        xrd-padding: (
+            property: padding,
+            class: p,
+            values: $space
+        ),
+    ),
+    $utilities
+);

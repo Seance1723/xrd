@@ -1,0 +1,13 @@
+// XRD Framework
+// Author: Rupak Biswas
+// This file contains all the function to convert to css in this application.
+
+// API to generate util class
+// Loop over each utility property (eg. padding, marfin , font-size etc.)
+@each $key, $utility in $utilities {
+
+  @if type-of($utility)==map {
+    @include generate-util($utility);
+  }
+
+}

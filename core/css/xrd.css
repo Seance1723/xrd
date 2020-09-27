@@ -1,19 +1,22 @@
 /*!
- * Bootstrap v1.0.0 (https://xrd.com/)
+ * Xpress Responsive Deveplopment v1.0.0 (https://xrd.com/)
  * Copyright 2020 Rupak Biswas
  * Copyright 2020 XRD Framework.
  * Licensed under MIT (https://github.com/Seance1723/xrd/blob/master/LICENSE)
  */
 /* Document */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- **/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
+  font-family: sans-serif;
   line-height: 1.15;
-  /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* Sections  */
@@ -342,5 +345,379 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+:root {
+  --xr-blue: #0050ef;
+  --xr-indigo: #6a00ff;
+  --xr-purple: #aa00ff;
+  --xr-pink: #d80073;
+  --xr-red: #e51400;
+  --xr-orange: #fa6800;
+  --xr-yellow: #f0a30a;
+  --xr-green: #008a00;
+  --xr-teal: #00aba9;
+  --xr-cyan: #1ba1e2;
+  --xr-white: #fff;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-8 {
+  padding: 0.5rem !important;
+}
+
+.p-10 {
+  padding: 0.625rem !important;
+}
+
+.p-12 {
+  padding: 0.75rem !important;
+}
+
+.p-14 {
+  padding: 0.875rem !important;
+}
+
+.p-16 {
+  padding: 1rem !important;
+}
+
+.p-18 {
+  padding: 1.125rem !important;
+}
+
+.p-20 {
+  padding: 1.25rem !important;
+}
+
+.p-22 {
+  padding: 1.375rem !important;
+}
+
+.p-24 {
+  padding: 1.5rem !important;
+}
+
+.p-26 {
+  padding: 1.625rem !important;
+}
+
+.p-28 {
+  padding: 1.75rem !important;
+}
+
+.p-30 {
+  padding: 1.875rem !important;
+}
+
+.p-32 {
+  padding: 2rem !important;
+}
+
+.p-34 {
+  padding: 2.125rem !important;
+}
+
+.p-36 {
+  padding: 2.25rem !important;
+}
+
+.p-38 {
+  padding: 2.375rem !important;
+}
+
+.p-40 {
+  padding: 2.5rem !important;
+}
+
+.p-42 {
+  padding: 2.625rem !important;
+}
+
+.p-44 {
+  padding: 2.75rem !important;
+}
+
+.p-46 {
+  padding: 2.875rem !important;
+}
+
+.p-48 {
+  padding: 3rem !important;
+}
+
+.p-50 {
+  padding: 3.125rem !important;
+}
+
+.p-52 {
+  padding: 3.25rem !important;
+}
+
+.p-54 {
+  padding: 3.375rem !important;
+}
+
+.p-56 {
+  padding: 3.5rem !important;
+}
+
+.p-58 {
+  padding: 3.625rem !important;
+}
+
+.p-60 {
+  padding: 3.75rem !important;
+}
+
+.p-62 {
+  padding: 3.875rem !important;
+}
+
+.p-64 {
+  padding: 4rem !important;
+}
+
+.p-66 {
+  padding: 4.125rem !important;
+}
+
+.p-68 {
+  padding: 4.25rem !important;
+}
+
+.p-70 {
+  padding: 4.375rem !important;
+}
+
+.p-72 {
+  padding: 4.5rem !important;
+}
+
+.p-74 {
+  padding: 4.625rem !important;
+}
+
+.p-76 {
+  padding: 4.75rem !important;
+}
+
+.p-78 {
+  padding: 4.875rem !important;
+}
+
+.p-80 {
+  padding: 5rem !important;
+}
+
+.p-82 {
+  padding: 5.125rem !important;
+}
+
+.p-84 {
+  padding: 5.25rem !important;
+}
+
+.p-86 {
+  padding: 5.375rem !important;
+}
+
+.p-88 {
+  padding: 5.5rem !important;
+}
+
+.p-90 {
+  padding: 5.625rem !important;
+}
+
+.p-92 {
+  padding: 5.75rem !important;
+}
+
+.p-94 {
+  padding: 5.875rem !important;
+}
+
+.p-96 {
+  padding: 6rem !important;
+}
+
+.p-98 {
+  padding: 6.125rem !important;
+}
+
+.p-100 {
+  padding: 6.25rem !important;
+}
+
+.p-110 {
+  padding: 6.875rem !important;
+}
+
+.p-120 {
+  padding: 7.5rem !important;
+}
+
+.p-130 {
+  padding: 8.125rem !important;
+}
+
+.p-140 {
+  padding: 8.75rem !important;
+}
+
+.p-150 {
+  padding: 9.375rem !important;
+}
+
+.p-160 {
+  padding: 10rem !important;
+}
+
+.p-170 {
+  padding: 10.625rem !important;
+}
+
+.p-180 {
+  padding: 11.25rem !important;
+}
+
+.p-190 {
+  padding: 11.875rem !important;
+}
+
+.p-200 {
+  padding: 12.5rem !important;
+}
+
+.p-210 {
+  padding: 13.125rem !important;
+}
+
+.p-220 {
+  padding: 13.75rem !important;
+}
+
+.p-230 {
+  padding: 14.375rem !important;
+}
+
+.p-240 {
+  padding: 15rem !important;
+}
+
+.p-250 {
+  padding: 15.625rem !important;
+}
+
+.p-260 {
+  padding: 16.25rem !important;
+}
+
+.p-270 {
+  padding: 16.875rem !important;
+}
+
+.p-280 {
+  padding: 17.5rem !important;
+}
+
+.p-290 {
+  padding: 18.5rem !important;
+}
+
+.p-300 {
+  padding: 18.125rem !important;
+}
+
+.p-310 {
+  padding: 19.75rem !important;
+}
+
+.p-320 {
+  padding: 20rem !important;
+}
+
+.p-330 {
+  padding: 20.625rem !important;
+}
+
+.p-340 {
+  padding: 21.25rem !important;
+}
+
+.p-350 {
+  padding: 21.875rem !important;
+}
+
+.p-360 {
+  padding: 22.5rem !important;
+}
+
+.p-370 {
+  padding: 23.5rem !important;
+}
+
+.p-380 {
+  padding: 23.125rem !important;
+}
+
+.p-390 {
+  padding: 24.75rem !important;
+}
+
+.p-400 {
+  padding: 25rem !important;
+}
+
+.p-450 {
+  padding: 28.125rem !important;
+}
+
+.p-500 {
+  padding: 31.25rem !important;
+}
+
+.p-550 {
+  padding: 34.375rem !important;
+}
+
+.p-600 {
+  padding: 37.5rem !important;
+}
+
+.p-650 {
+  padding: 40.625rem !important;
+}
+
+.p-700 {
+  padding: 43.75rem !important;
+}
+
+.p-750 {
+  padding: 46.875rem !important;
+}
+
+.p-800 {
+  padding: 50rem !important;
+}
+
+.p-850 {
+  padding: 53.125rem !important;
+}
+
+.p-900 {
+  padding: 56.25rem !important;
+}
+
+.p-1000 {
+  padding: 62.5rem !important;
+}
+
+.p-1200 {
+  padding: 75rem !important;
 }
 /*# sourceMappingURL=xrd.css.map */

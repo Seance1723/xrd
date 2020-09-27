@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v1.0.0 (https://xrd.com/)
+ * Xpress Responsive Deveplopment v1.0.0 (https://xrd.com/)
  * Copyright 2020 Rupak Biswas
  * Copyright 2020 XRD Framework.
  * Licensed under MIT (https://github.com/Seance1723/xrd/blob/master/LICENSE)
@@ -7,11 +7,21 @@
 
 // This file contains all property used in this application.
 
+// Importing core files
+@import "_mixins/functions";
+@import "_mixins/variables";
+@import "_mixins/mixins";
+
+
+// normalize.css
+@import "_util/utilities";
+
 // normalize.css
 @import "_mixins/normalize";
 
-// Importing core files
-@import "_mixins/mixins";
-
 // Importing component files
+@import "_util/root";
 @import "_components/spacing";
+
+
+@import "_mixins/api";
