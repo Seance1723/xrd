@@ -1,3 +1,15 @@
 // XRD Framework
 // Author: Rupak Biswas
 // This file contains all the function used in this application.
+
+
+// XRD color functions
+
+// Shade of color 100, 200, 300 up to 800 by adding percentage of white & black in color
+@function xrd-tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+}

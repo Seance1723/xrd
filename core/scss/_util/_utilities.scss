@@ -2,10 +2,22 @@ $utilities: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $utilities: map-merge(
     (
+        // color utilities
+        xrd-text-color: (
+            property: color,
+            class: txt-color,
+            values: $colors
+        ),
         // Padding utilities
         xrd-padding: (
             property: padding,
             class: p,
+            values: $space
+        ),
+        // margin utilities
+        xrd-margin: (
+            property: margin,
+            class: m,
             values: $space
         ),
     ),

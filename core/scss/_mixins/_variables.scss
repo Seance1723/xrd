@@ -5,9 +5,8 @@
 
 // Defining the color (primary, secondary, border, background and for the entire application)
 
-$white:    #fff !default;
-$black:    #000 !default;
-
+$white:   #fff !default;
+$black:   #000 !default;
 $indigo:  #6a00ff !default;
 $purple:  #aa00ff !default;
 $pink:    #d80073 !default;
@@ -18,25 +17,42 @@ $green:   #008a00 !default;
 $teal:    #00aba9 !default;
 $cyan:    #1ba1e2 !default;
 
+$colors: () !default;
+$colors : map-merge(
+  (
+    'white':    $white,
+    'black':    $black,
+    'indigo':   $indigo,
+    'purple':   $purple,
+    'pink':     $pink,
+    'red':      $red,
+    'orange':   $orange,
+    'yellow':   $yellow,
+    'green':    $green,
+    'teal':     $teal,
+    'cyan':     $cyan     
+  ),
+  $colors
+);
+
 
 
 
 // Gray Color
-$gray: #647687 !default;
-$gray-100: #d1d5d9 !default;
-$gray-200: #b2bac2 !default;
-$gray-300: #939faa !default;
-$gray-400: #7b8a98 !default;
-$gray-500: #647687 !default;
-$gray-600: #576876 !default;
-$gray-700: #475460 !default;
-$gray-800: #38424b !default;
-$gray-900: #272d34 !default;
+$gray:      #647687 !default;
+//$gray-100:  #d1d5d9 !default;
+$gray-100: xrd-tint($gray, 50);
+$gray-200:  #b2bac2 !default;
+$gray-300:  #939faa !default;
+$gray-400:  #7b8a98 !default;
+$gray-500:  #647687 !default;
+$gray-600:  #576876 !default;
+$gray-700:  #475460 !default;
+$gray-800:  #38424b !default;
+$gray-900:  #272d34 !default;
 
 $grays: () !default;
-$grays: map-merge(
-  (
-    "100": $gray-100,
+$grays: map-merge(("100": $gray-100,
     "200": $gray-200,
     "300": $gray-300,
     "400": $gray-400,
@@ -44,15 +60,14 @@ $grays: map-merge(
     "600": $gray-600,
     "700": $gray-700,
     "800": $gray-800,
-    "900": $gray-900
-  ),
-  $grays
-);
+    "900": $gray-900),
+  $grays);
 
 
 // Blue Color
-$blue:    #0050ef !default;
-$blue-100: #c5cbfb !default;
+$blue: #0050ef !default;
+//$blue-100: #c5cbfb !default;
+$blue-100: xrd-tint($blue, 50);
 $blue-200: #9daaf8 !default;
 $blue-300: #7088f6 !default;
 $blue-400: #496cf3 !default;
@@ -63,9 +78,7 @@ $blue-800: #0030cc !default;
 $blue-900: #0017bb !default;
 
 $blues: () !default;
-$blues: map-merge(
-  (
-    "100": $blue-100,
+$blues: map-merge(("100": $blue-100,
     "200": $blue-200,
     "300": $blue-300,
     "400": $blue-400,
@@ -73,71 +86,40 @@ $blues: map-merge(
     "600": $blue-600,
     "700": $blue-700,
     "800": $blue-800,
-    "900": $blue-900
-  ),
-  $grays
-);
+    "900": $blue-900),
+  $grays);
 
 
-// scss-docs-start colors-map
-$colors: (
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white
-) !default;
-
-// $indigo:  #6a00ff !default;
-// $purple:  #aa00ff !default;
-// $pink:    #d80073 !default;
-// $red:     #e51400 !default;
-// $orange:  #fa6800 !default;
-// $yellow:  #f0a30a !default;
-// $green:   #008a00 !default;
-// $teal:    #00aba9 !default;
-// $cyan:    #1ba1e2 !default;
 
 // Defining the Percentage based on (0-100 in 8 part) & multiple of 10
 $per: () !default;
-$per: map-merge(
-    (
-        0: 0,
-        10: 10%,
-        15: 15%,
-        20: 20%,
-        25: 25%,
-        30: 30%,
-        35: 35%,
-        40: 40%,
-        45: 45%,
-        50: 50%,
-        55: 55%,
-        60: 60%,
-        65: 65%,
-        70: 70%,
-        75: 75%,
-        80: 80%,
-        85: 85%,
-        90: 90%,
-        95: 95%,
-        100: 100%,
-    ),
-    $per
-);
+$per: map-merge((0: 0,
+    10: 10%,
+    15: 15%,
+    20: 20%,
+    25: 25%,
+    30: 30%,
+    35: 35%,
+    40: 40%,
+    45: 45%,
+    50: 50%,
+    55: 55%,
+    60: 60%,
+    65: 65%,
+    70: 70%,
+    75: 75%,
+    80: 80%,
+    85: 85%,
+    90: 90%,
+    95: 95%,
+    100: 100%,
+  ),
+  $per);
 
 // Defining the space ( px in rem )
 $defSpace: 1rem !default;
 $space: () !default;
-$space: map-merge(
-  (
-    0: 0,
+$space: map-merge((0: 0,
     8: 0.5rem,
     10: 0.625rem,
     12: 0.75rem,
@@ -226,7 +208,5 @@ $space: map-merge(
     850: (($defSpace * 53) + 0.125),
     900: (($defSpace * 56) + 0.25),
     1000: (($defSpace * 62) + 0.5),
-    1200: ($defSpace * 75)
-  ),
-  $space
-);
+    1200: ($defSpace * 75)),
+  $space);

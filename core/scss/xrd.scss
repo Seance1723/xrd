@@ -17,11 +17,11 @@
 @import "_util/utilities";
 
 // normalize.css
-@import "_mixins/normalize";
+//@import "_mixins/normalize";
 
 // Importing component files
 @import "_util/root";
-@import "_components/spacing";
+@import "_components/components";
 
 
 @import "_mixins/api";
